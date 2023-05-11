@@ -1,5 +1,6 @@
 package com.firstspringproj.practicespringproject;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,7 +14,8 @@ public class HelloWorldConfiguration {
         return "Ash";
     }
 
-    @Bean
+    @Bean("ageNamedBean")
+    @Qualifier("ageQualifier")
     public int age() {
         return 23;
     }
@@ -30,6 +32,11 @@ public class HelloWorldConfiguration {
 
     @Bean
     public Person person3Parameters(String name, int age){
+        return new Person(name, age);
+    }
+
+    @Bean
+    public Person person4Qualifier(String name, @Qualifier("ageQualifier") int age){
         return new Person(name, age);
     }
 }
