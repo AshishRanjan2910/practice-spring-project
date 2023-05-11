@@ -1,8 +1,8 @@
 package com.firstspringproj.practicespringproject.game;
 
 public interface GamingConsole {
-    public void up();
-    public void down();
-    public void right();
-    public void left();
+    void up();
+    void down();
+    void right();
+    void left();
 }
