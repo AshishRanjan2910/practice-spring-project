@@ -1,7 +1,6 @@
-package com.firstspringproj.practicespringproject;
+package com.firstspringproj.practicespringproject.helloworld;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class App02HelloWorldSpring {
