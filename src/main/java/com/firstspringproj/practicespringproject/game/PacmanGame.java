@@ -1,5 +1,8 @@
 package com.firstspringproj.practicespringproject.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PacmanGame implements GamingConsole {
     public void up() {
         System.out.println("fly");
