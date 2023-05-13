@@ -1,11 +1,11 @@
 package com.firstspringproj.practicespringproject.calc;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 
-@Component
+@Service
 public class BusinessCalculationService {
     DataService dataService;
     public BusinessCalculationService(@Qualifier("MySQLDataServiceQualifier") DataService dataService) {
